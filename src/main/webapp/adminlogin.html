@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 PATIENT DB ADMIN LOGIN</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+<SCRIPT type = "text/JavaScript">
+	function pwChk() {
+		if (document.form1.pw.value == "1234"){
+			opener.location.href="adminmenu.html";
+		  	self.close();
+		}
+		else
+			alert("incorrect password!")
+	}
+</SCRIPT>
+</head>
+<body>
+	<body onload="window.resizeTo(300,300)">
+	<!-- password check -->
+	<div style = "text-align: center; font-size: 20px">
+	<form name = "form1">
+	관리자 계정 비밀번호 : <INPUT type = "password" size = 12 name = "pw">
+	<INPUT type = "button" value = "login" onClick = "pwChk()">
+	</form>
+	</div>
+</body>
+</html>

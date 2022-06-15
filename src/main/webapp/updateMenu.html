@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>UPDATE DATA</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   </head>
+   <body class="is-preload">
+
+      <!-- Header -->
+         <header id="header">
+            <a href="adminmenu.html" class="title">관리자 모드</a>
+            <nav>
+               <ul>
+                  <li><a href="main.html">HOME</a></li>
+                  <li><a href="insertMenu.html">INSERT</a></li>
+                  <li><a href="updateMenu.html" class="active">UPDATE</a></li>
+                  <li><a href="deleteMenu.html">DELETE</a></li>
+               </ul>
+            </nav>
+         </header>
+
+      <!-- Wrapper -->
+      <div id="wrapper">
+
+         <!-- Main -->
+            <section id="main" class="wrapper">
+               <div class="inner">
+                  <h1 class="major">수정할 데이터를 선택하세요</h1>
+                  <form action="update.jsp" method="POST">
+                     <h3>1.환자</h3>
+                     <h3>2.병원</h3>
+                     <h3>3.지역</h3>
+                     <h3>4.환자증상여부</h3>
+                     <h3>5.관련인</h3>
+                     <h3>6.경로</h3>
+                     <h3>7.완치여부</h3>
+                     <select name="update">
+                        <option value="1" selected>환자</option>
+                        <option value="2">병원</option>
+                        <option value="3">지역</option>
+                        <option value="4">환자증상여부</option>
+                        <option value="5">관련인</option>
+                        <option value="6">경로</option>
+                        <option value="7">완치여부</option>
+                     </select>
+                     <input type="submit" value="Submit" />
+                  </form>
+               </div>
+            </section>
+
+      </div>
+
+      <!-- Footer -->
+         <footer id="footer" class="wrapper alt">
+            <div class="inner">
+               <ul class="menu">
+                  <p>Made with  <span role='img' aria-label='coffee'> ☕ </span>  by Team 11</p>
+               </ul>
+            </div>
+         </footer>
+
+      <!-- Scripts -->
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/jquery.scrollex.min.js"></script>
+         <script src="assets/js/jquery.scrolly.min.js"></script>
+         <script src="assets/js/browser.min.js"></script>
+         <script src="assets/js/breakpoints.min.js"></script>
+         <script src="assets/js/util.js"></script>
+         <script src="assets/js/main.js"></script>
+
+   </body>
+</html>
